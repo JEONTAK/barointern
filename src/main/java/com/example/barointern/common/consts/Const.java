@@ -6,6 +6,8 @@ public interface Const {
 
     Long HOUR = 60 * 60 * 1000L;
 
+    String PASSWORD_PATTERN = "^(?=.*[a-zA-Z])(?=.*\\d)[a-zA-Z0-9]{8,}$";
+
     //로그인 없이 방문 가능한 페이지
     Map<String, String[]> WHITE_LIST = Map.of(
             "GET", new String[]{
