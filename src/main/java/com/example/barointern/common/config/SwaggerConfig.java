@@ -43,7 +43,7 @@ public class SwaggerConfig {
 
     private Info apiInfo() {
         return new Info()
-                .title("바로인턴 백엔드(JAVA) 과제 Swagger Docs")
+                .title("바로인턴 백엔드(JAVA) 과제 API Docs")
                 .description("바로인턴 백엔드(JAVA) 과제 API Docs입니다.")
                 .version("1.0.0");
     }

@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 @Getter
 public enum UserRole {
-    USER, ADMIN
+    USER, ADMIN;
 
     public static UserRole of(String role) {
         return Arrays.stream(UserRole.values())

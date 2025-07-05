@@ -4,7 +4,7 @@ spring:
 
 jwt:
   secret:
-    key: ${JWT-SECRET-KEY}
+    key: ${JWT_SECRET_KEY}
 
 springdoc:
   api-docs:
