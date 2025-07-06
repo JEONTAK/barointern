@@ -22,6 +22,6 @@ public class AdminService {
         }
 
         user.changeRole(userRole);
-        return user;
+        return userRepository.save(user);
     }
 }

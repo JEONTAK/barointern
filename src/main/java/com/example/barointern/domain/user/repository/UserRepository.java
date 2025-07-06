@@ -22,7 +22,7 @@ public class UserRepository {
 
     public Optional<User> findByEmail(String email) {
         Long id = emailIndex.get(email);
-        return Optional.of(users.get(id));
+        return id != null ? Optional.of(users.get(id)) : Optional.empty();
     }
 
     public Long generateId() {
