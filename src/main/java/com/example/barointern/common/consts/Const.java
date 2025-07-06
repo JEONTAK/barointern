@@ -14,12 +14,14 @@ public interface Const {
             "GET", new String[]{
                     "/swagger-ui/*",
                     "/v*/api-docs/**",
+                    "/docs"
             },
             "POST", new String[]{
                     "/api/v*/auth/signup/*",
                     "/api/v*/auth/signin",
                     "/swagger-ui/*",
                     "/v*/api-docs/**",
+                    "/docs"
             }
     );
 }
