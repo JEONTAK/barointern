@@ -3,6 +3,10 @@
 사용자 회원가입, 로그인, 권한 변경 기능을 목표로하는 Spring Boot 프로젝트입니다.  
 JWT 기반 인증/인가 방식을 사용합니다.
 
+### Tech Spec 문서
+과제를 진행하기 전, Tech Spec 문서를 통해 어떻게 진행할지 정리해보았습니다.
+https://github.com/JEONTAK/barointern/wiki/TechSpec
+
 ### ✅ 주요 기능
 - 회원가입 (USER,ADMIN)
 - 로그인 (JWT 발급)
