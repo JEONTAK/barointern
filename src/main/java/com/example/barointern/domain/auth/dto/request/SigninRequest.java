@@ -9,7 +9,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public class SigninRequest {
 
-    @Schema(description = "이메일", example = "example@example.com")
+    @Schema(description = "이메일", example = "admin@example.com")
     @NotBlank(message = "이메일은 공백이 아니어야 합니다.")
     private String email;
 

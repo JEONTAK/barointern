@@ -12,8 +12,9 @@ import lombok.Getter;
 @AllArgsConstructor
 public class SignupAdminRequest {
 
-    @Schema(description = "이메일", example = "example@example.com")
+    @Schema(description = "이메일", example = "admin@example.com")
     @Email(message = "이메일 형식에 맞지 않습니다.")
+    @NotBlank(message = "이메일은 공백이 아니어야 합니다.")
     private String email;
 
     @Schema(description = "비밀번호", example = "password1234")

@@ -20,13 +20,9 @@ public class UserRepository {
         return user;
     }
 
-    public Optional<User> findById(Long id) {
-        return Optional.ofNullable(users.get(id));
-    }
-
     public Optional<User> findByEmail(String email) {
         Long id = emailIndex.get(email);
-        return id != null ? Optional.ofNullable(users.get(id)) : Optional.empty();
+        return Optional.of(users.get(id));
     }
 
     public Long generateId() {

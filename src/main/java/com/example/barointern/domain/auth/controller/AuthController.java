@@ -29,6 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     private final AuthService authService;
+
     @Operation(summary = "일반 사용자 회원가입 API", description = "일반 사용자로 회원가입합니다.")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "회원가입 성공",
